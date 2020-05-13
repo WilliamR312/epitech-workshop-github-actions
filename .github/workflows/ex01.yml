@@ -6,7 +6,7 @@ name: CI
 # events but only for the master branch
 on:
   watch:
-    run: echo Hello, World! Today is %m-%d-%Y %H:%M:%S
+    run: echo Hello, World! Today is -d %m-%d-%Y %H:%M:%S
   push:
     branches: [ master ]
   pull_request:
