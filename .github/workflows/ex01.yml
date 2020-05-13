@@ -1,4 +1,7 @@
 on:
+  watch:
+    # test
+    echo Hello, World! Today is %m-%d-%Y %H:%M:%S
   push:
     branches:
       - master
