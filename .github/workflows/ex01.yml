@@ -1,1 +1,15 @@
-
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'src/**'
+  pull_request:
+    branches:
+      - master
+      - develop
+    types:
+      - opened
+      - edited
+  schedule:
+    - cron : '* * /1 * *'
